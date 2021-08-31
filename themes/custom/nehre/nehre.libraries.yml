@@ -1,0 +1,8 @@
+# nehre.libraries.yml
+global:
+  version: 1.x
+  css:
+    theme:
+      css/nehre.css: {}
+  js:
+    js/nehre.js: {}

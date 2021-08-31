@@ -1,0 +1,7 @@
+custom_header:
+  version: 1.x
+  css:
+    base:
+    css/custom_header.css: {}
+  js:
+    js/custom_header.js: {}
