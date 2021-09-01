@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implements hook_theme()
+ * @return mixed
+ */
+function custom_header_theme() {
+    $theme['custom_header'] = [
+        'variables' => [
+            'page' =>  NULL,
+        ],
+        'template' => 'custom_header',
+    ];
+
+    return $theme;
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function custom_header_preprocess(&$variables, $hook) {
+
+    $variables['#attached']['library'][] = 'custom_header/custom_header';
+
+    $variables['#cache']['max-age'] = 1;
+}

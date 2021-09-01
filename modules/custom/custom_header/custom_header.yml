@@ -1,0 +1,7 @@
+name: Custom Header
+type: module
+description: Nehre custom header
+core: 8.x
+package: Custom
+dependencies:
+  - block
